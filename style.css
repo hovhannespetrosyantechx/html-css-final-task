@@ -1,5 +1,53 @@
+:root{
+    --header-background: #222;
+    --secondary-text-color: white;
+    --accent-color-1: #B2D235;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+.site-header{
+    background-color: var(--header-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    margin: 5px 20px 5px 20px;
+}
+.header-navigation{
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.header-button-1{
+    padding: 5px;
+    margin: 5px;
+    color: var(--secondary-text-color);
+}
+.header-button-2{
+    padding: 5px;
+    margin: 5px;
+    width: 117px;
+    height: 40px;
+    background-color: var(--accent-color-1);
+    text-align: center;
+    border-radius: 50%;
 }
