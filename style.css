@@ -8,46 +8,59 @@
   padding: 0;
   box-sizing: border-box;
 }
-div{
-    display: block;
-    unicode-bidi: isolate;
+body{
+    font-family: Montserrat;
 }
 .site-header{
     background-color: var(--header-background);
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 .header-logo{
-    margin: 5px 20px 5px 20px;
+    margin: 5px 30px 5px 30px;
+    width: 120px;
+    height: 60px;
+}
+.header-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 .header-navigation{
     color: var(--secondary-text-color);
+    gap: 2rem;
     display: flex;
     align-items: center;
-}
-.nav-item{
-    padding: 5px;
-    margin: 5px;
-    width: 150px;
-    height: 30px;
 }
 .header-buttons{
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-left: auto;
 }
 .header-button-1{
-    padding: 5px;
-    margin: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--secondary-text-color);
 }
 .header-button-2{
-    padding: 5px;
-    margin: 5px;
     width: 117px;
     height: 40px;
     background-color: var(--accent-color-1);
-    text-align: center;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+@media (max-width: 768px) {
+    .header-section{
+        display: none;
+    }
+    .site-header{
+        align-content: center;
+    }
+
 }
