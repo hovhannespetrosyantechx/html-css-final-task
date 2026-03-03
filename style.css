@@ -1,66 +1,92 @@
-:root{
+:root {
     --header-background: #222;
     --secondary-text-color: white;
+
     --accent-color-1: #B2D235;
 }
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body{
+
+body {
     font-family: Montserrat;
+    font-size: 14px;
 }
-.site-header{
+
+.site-header {
+    align-items: center;
     background-color: var(--header-background);
     display: flex;
-    align-items: center;
+    position: relative;
 }
-.header-logo{
-    margin: 5px 30px 5px 30px;
-    width: 120px;
+
+.burger {
+    display: none;
+}
+
+.header-logo {
     height: 60px;
+    margin: 10px 32px 10px 32px;
+    width: 120px;
 }
-.header-section{
-    display: flex;
+
+.header-section {
     align-items: center;
-    width: 100%;
+    display: flex;
     justify-content: space-between;
+    width: 100%;
 }
-.header-navigation{
-    color: var(--secondary-text-color);
-    gap: 2rem;
-    display: flex;
+
+.header-navigation {
     align-items: center;
+    color: var(--secondary-text-color);
+    display: flex;
+    gap: 25px;
 }
-.header-buttons{
+
+.header-buttons {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-left: auto;
+    margin-right: 60px;
 }
-.header-button-1{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+
+.header-button-1 {
     align-items: center;
     color: var(--secondary-text-color);
-}
-.header-button-2{
-    width: 117px;
-    height: 40px;
-    background-color: var(--accent-color-1);
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+    margin: 20px;
 }
+
+.header-button-2 {
+    align-items: center;
+    background-color: var(--accent-color-1);
+    border-radius: 20px;
+    color: var(--secondary-text-color);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 117px;
+}
+
 @media (max-width: 768px) {
-    .header-section{
+    .header-section {
         display: none;
     }
-    .site-header{
-        align-content: center;
+
+    .site-header {
+        justify-content: center;
+        position: relative;
     }
 
+    .burger {
+        display: block;
+        left: 20px;
+        position: absolute;
+    }
 }
