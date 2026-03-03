@@ -1,8 +1,11 @@
 :root {
-    --header-background: #222;
-    --secondary-text-color: white;
+    --bg-main: #FFFFFF;
+    --bg-second: #FAFAFA;
+    --bg-third: #222;
 
+    --text-color-2: white;
     --accent-color-1: #B2D235;
+    --text-color-3: #6F7076;
 }
 
 * {
@@ -18,7 +21,8 @@ body {
 
 .site-header {
     align-items: center;
-    background-color: var(--header-background);
+    background-color: var(--bg-third);
+    color: var(--text-color-2);
     display: flex;
     position: relative;
 }
@@ -42,7 +46,6 @@ body {
 
 .header-navigation {
     align-items: center;
-    color: var(--secondary-text-color);
     display: flex;
     gap: 25px;
 }
@@ -57,7 +60,6 @@ body {
 
 .header-button-1 {
     align-items: center;
-    color: var(--secondary-text-color);
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -74,6 +76,54 @@ body {
     width: 117px;
 }
 
+.footer-info {
+    background-color: var(--bg-second);
+    color: var();
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 33px;
+    position: relative;
+}
+
+.footer-nav {
+    align-items: flex-start;
+    color: var(--text-color-3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.footer-copyright {
+    align-items: center;
+    background-color: var(--bg-third);
+    color: var(--text-color-2);
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    position: relative;
+}
+
+.copyright-info {
+    margin: 30px;
+}
+
+.footer-item {
+    margin-top: 10px;
+}
+
+.footer-h3 {
+    color: var(--accent-color-1);
+    margin: 15px 0px 20px 0px;
+}
+
 @media (max-width: 768px) {
     .header-section {
         display: none;
@@ -88,5 +138,14 @@ body {
         display: block;
         left: 20px;
         position: absolute;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        margin-left: 20px;
     }
 }
