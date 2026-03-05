@@ -193,13 +193,15 @@ body {
 }
 
 .section-2 h2 {
-    font-size: 30px;
+    align-self: center;
+    font-size: 32px;
     margin: 20px 30px;
 }
 
 .section-2-container {
     display: flex;
-    flex-direction: row;
+    /* gap: 20px; */
+    
 }
 
 .section-2-card {
@@ -210,6 +212,7 @@ body {
     max-width: 380px;
     overflow: hidden;
     width: 100%;
+    margin: 0 30px;
 }
 
 .section-2-card-top {
@@ -343,6 +346,7 @@ hr {
     display: flex;
     gap: 10px;
     margin: 30px 0;
+    align-self: center;
 }
 
 .radio-item {
