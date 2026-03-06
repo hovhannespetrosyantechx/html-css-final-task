@@ -148,12 +148,12 @@ body {
 .search-button {
     border: none;
     border-radius: 50%;
-    height: 44px;
+    height: 40px;
     position: absolute;
     right: 5px;
     top: 53%;
     transform: translateY(-50%);
-    width: 44px;
+    width: 40px;
 }
 
 .search-button img {
@@ -705,6 +705,94 @@ hr {
         width: 100%;
     }
 }
+
+.sectio
+.section-7 {
+    background-color: var(--accent-color-1);
+    color: var(--bg-main);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.section-6{
+    margin: 40px 0;
+}
+.section-6-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+/* .section-6-content img{
+    width: 100%;
+    height: auto; 
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+} */
+.section-6-content h2{
+    font-size: 28px;
+    position: absolute;
+    transform: translateY(-100%);
+}
+.map-img{
+    width: 100%;
+    height: auto; 
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+}
+.map-mobile{
+    width: 100%;
+    height: auto;
+    max-height: 550px; 
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.map-button{
+    font-size: 16px;
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    transform: translateY(100%);
+    overflow: hidden;
+    
+}       
+.map-button input{
+    border: none;
+    border-radius: 40px;
+    box-shadow: var(--box-shadow);
+    outline: none;
+    padding: 16px 60px 16px 50px;
+    width: 100%;overflow: auto;
+}
+.img2 ,.map-mobile{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .img1,
+    .map-img{
+        display: none;
+    }
+    .img2{
+        display: flex;
+    }
+    .map-mobile{
+        display: block;
+    }
+    .section-6{
+        margin-bottom: 0;
+    }
+}
+
+
 
 .section-7 {
     background-color: var(--accent-color-1);
