@@ -225,7 +225,7 @@ body {
   width: 100%;
 }
 
-.status-elemetn-new {
+.status-element-new {
   background: var(--new-button-color);
   border-radius: 8px;
   color: var(--bg-main);
@@ -236,7 +236,7 @@ body {
   top: 15px;
 }
 
-.status-elemetn-rent {
+.status-element-rent {
   background: var(--accent-color-1);
   border-radius: 8px;
   color: var(--bg-main);
@@ -247,7 +247,7 @@ body {
   top: 15px;
 }
 
-.status-elemetn-sale {
+.status-element-sale {
   background: var(--accent-color-1);
   border-radius: 8px;
   color: var(--bg-main);
@@ -271,7 +271,7 @@ body {
   width: 55px;
 }
 
-.section-2-card-midle {
+.section-2-card-middle {
   padding: 15px;
 }
 
